@@ -1,0 +1,10 @@
+extends ../layout
+
+block content 
+  form(action="/sign-up", method="post")
+    input(type="text", name="username")
+    input(type="text", name="password")
+    input(type="text", name="rePassword")
+    input(type="text", name="firstName")
+    input(type="text", name="lastName")
+    input(type="submit", value="SignUp")
