@@ -3,5 +3,21 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+    style 
+      body
+        font-family: "Open Sans",helvetica,sans-serif;
+  body(class="duration-75")
+    header(class="flex justify-center fixed w-full h-16 shadow-md bg-white top-0")
+      div(class="flex justify-end w-full my-auto px-32")
+        ul(class="flex justify-around w-64")
+          li(class="text-red-500 font-semibold") 
+            a(href="/") Home
+          li(class="text-red-500 font-semibold") 
+            a(href="#") Sign In 
+          li(class="text-red-500 font-semibold") 
+            a(href="#") Sign Up
+    div(class="mb-16 mt-24")
+      block content
+    footer 
+      div(class="h-32 flex justify-center justify-items-center bg-gray-800")
+          span(class="text-white bg-green-300") © All rights reserved.
