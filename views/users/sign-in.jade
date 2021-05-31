@@ -1,4 +1,16 @@
 extends ../layout
 
-block content 
-  h1 Hi Tam
+block content
+  div(class="flex justify-center")
+    div(class="card shadow p-12 w-2/5 rounded")
+      form(action="/sign-in", method="post", autocomplete="off")
+        input(type="text", id="username", name="username", class="input")
+        br
+        label(for="username") Username
+        br
+        input(type="password", id="password" name="password",class="input") 
+        br
+        label(for="password") Password
+        br
+        div(class="flex justify-center")
+          input(type="submit", value="Sign In", class="btn")
